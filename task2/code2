@@ -1,0 +1,123 @@
+/*
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of short: " << sizeof(short) << " bytes" << endl;
+    cout << "Size of long: " << sizeof(long) << " bytes" << endl;
+    cout << "Size of long long: " << sizeof(long long) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+    cout << "Size of long double: " << sizeof(long double) << " bytes" << endl;
+    cout << "Size of char: " << sizeof(char) << " bytes" << endl;
+    cout << "Size of bool: " << sizeof(bool) << " bytes" << endl;
+    cout << "Size of wchar_t: " << sizeof(wchar_t) << " bytes" << endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+// Global variable
+int globalVar = 100;
+
+void displayScope() {
+    int localVar = 50; // Local to displayScope
+    cout << "Inside displayScope - globalVar: " << globalVar << endl;
+    cout << "Inside displayScope - localVar: " << localVar << endl;
+}
+
+int main() {
+    int localVar = 20; // Local to main
+
+    cout << "Inside main - globalVar: " << globalVar << endl;
+    cout << "Inside main - localVar: " << localVar << endl;
+
+    {
+        // Block scope
+        int blockVar = 10;
+        cout << "Inside block - blockVar: " << blockVar << endl;
+        cout << "Inside block - localVar: " << localVar << endl;
+    }
+
+   
+
+    displayScope();
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+// Macro constant
+#define PI_MACRO 3.14159
+
+int main() {
+    // Typed constant
+    const float piConst = 3.14159;
+
+    float radius;
+    cout << "Enter radius: ";
+    cin >> radius;
+
+    // Calculate area using both constants
+    float areaMacro = PI_MACRO * radius * radius;
+    float areaConst = piConst * radius * radius;
+
+    cout << "Area using #define (PI_MACRO): " << areaMacro << endl;
+    cout << "Area using const (piConst): " << areaConst << endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // 🔹 Default initialization (for built-in types, may contain garbage value)
+    int defaultInit; 
+    cout << "Default-initialized int (may be garbage): " << defaultInit << endl;
+
+    // 🔹 Direct initialization
+    int directInit = 10;
+    cout << "Direct-initialized int: " << directInit << endl;
+
+    // 🔹 Copy initialization
+    int copyInit(20);
+    cout << "Copy-initialized int: " << copyInit << endl;
+
+    // 🔹 Brace (uniform) initialization - introduced in C++11
+    int braceInit{30};
+    cout << "Brace-initialized int: " << braceInit << endl;
+
+    // 🔹 Initialization with expressions
+    int expressionInit = directInit + copyInit;
+    cout << "Expression-based initialization: " << expressionInit << endl;
+
+    // 🔹 Pointer initialization
+    int* ptr = new int(40); // dynamically initialized
+    cout << "Pointer-initialized value: " << *ptr << endl;
+
+    delete ptr; // clean up
+
+    return 0;
+}
+
+
+*/
+
+
+
+
+
+
