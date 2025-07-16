@@ -1,0 +1,190 @@
+/*
+#include <iostream>
+using namespace std;
+
+int main() {
+    char op;
+    float num1, num2;
+
+    cout << "Enter an operator (+, -, *, /): ";
+    cin >> op;
+
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
+
+    switch (op) {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << num1 + num2;
+            break;
+        case '-':
+            cout << num1 << " - " << num2 << " = " << num1 - num2;
+            break;
+        case '*':
+            cout << num1 << " * " << num2 << " = " << num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0)
+                cout << num1 << " / " << num2 << " = " << num1 / num2;
+            else
+                cout << "Error! Division by zero.";
+            break;
+        default:
+            cout << "Invalid operator!";
+            break;
+    }
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks[5];
+    float total = 0, average;
+    char grade;
+
+    cout << "Enter marks for 5 subjects: ";
+    for (int i = 0; i < 5; i++) {
+        cin >> marks[i];
+        total += marks[i];
+    }
+
+    average = total / 5;
+
+    if (average >= 90)
+        grade = 'A';
+    else if (average >= 80)
+        grade = 'B';
+    else if (average >= 70)
+        grade = 'C';
+    else if (average >= 60)
+        grade = 'D';
+    else
+        grade = 'F';
+
+    cout << "Total Marks: " << total << endl;
+    cout << "Average Marks: " << average << "%" << endl;
+    cout << "Grade: " << grade << endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    // Check if number is even or odd
+    if (num % 2 == 0)
+        cout << num << " is Even" << endl;
+    else
+        cout << num << " is Odd" << endl;
+
+    // Check if number is positive, negative or zero
+    if (num > 0)
+        cout << num << " is Positive" << endl;
+    else if (num < 0)
+        cout << num << " is Negative" << endl;
+    else
+        cout << "The number is Zero" << endl;
+
+    // Check if number is prime
+    bool isPrime = true;
+    if (num <= 1)
+        isPrime = false;
+    else {
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        cout << num << " is a Prime number" << endl;
+    else
+        cout << num << " is not a Prime number" << endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float principal, rate, time, interest;
+
+    cout << "Enter Principal amount: ";
+    cin >> principal;
+
+    cout << "Enter Rate of interest (% per annum): ";
+    cin >> rate;
+
+    cout << "Enter Time (in years): ";
+    cin >> time;
+
+    interest = (principal * rate * time) / 100;
+
+    cout << "Simple Interest = " << interest << endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    float temp, converted;
+
+    cout << "Temperature Converter\n";
+    cout << "1. Celsius to Fahrenheit\n";
+    cout << "2. Fahrenheit to Celsius\n";
+    cout << "Enter your choice (1 or 2): ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "Enter temperature in Celsius: ";
+            cin >> temp;
+            converted = (temp * 9.0 / 5.0) + 32;
+            cout << temp << "°C = " << converted << "°F" << endl;
+            break;
+        case 2:
+            cout << "Enter temperature in Fahrenheit: ";
+            cin >> temp;
+            converted = (temp - 32) * 5.0 / 9.0;
+            cout << temp << "°F = " << converted << "°C" << endl;
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+    }
+
+    return 0;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
